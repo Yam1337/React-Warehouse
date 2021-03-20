@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Warehouse/static/css/main.24be126d.chunk.css",
+    "main.js": "/React-Warehouse/static/js/main.f2e56b38.chunk.js",
+    "main.js.map": "/React-Warehouse/static/js/main.f2e56b38.chunk.js.map",
+    "runtime-main.js": "/React-Warehouse/static/js/runtime-main.38ed0b53.js",
+    "runtime-main.js.map": "/React-Warehouse/static/js/runtime-main.38ed0b53.js.map",
+    "static/js/2.bda45c9c.chunk.js": "/React-Warehouse/static/js/2.bda45c9c.chunk.js",
+    "static/js/2.bda45c9c.chunk.js.map": "/React-Warehouse/static/js/2.bda45c9c.chunk.js.map",
+    "static/js/3.252eedc6.chunk.js": "/React-Warehouse/static/js/3.252eedc6.chunk.js",
+    "static/js/3.252eedc6.chunk.js.map": "/React-Warehouse/static/js/3.252eedc6.chunk.js.map",
+    "index.html": "/React-Warehouse/index.html",
+    "static/css/main.24be126d.chunk.css.map": "/React-Warehouse/static/css/main.24be126d.chunk.css.map",
+    "static/js/2.bda45c9c.chunk.js.LICENSE.txt": "/React-Warehouse/static/js/2.bda45c9c.chunk.js.LICENSE.txt",
+    "static/media/brick.757f1ba4.png": "/React-Warehouse/static/media/brick.757f1ba4.png",
+    "static/media/customer.a300b9b9.svg": "/React-Warehouse/static/media/customer.a300b9b9.svg",
+    "static/media/App.css": "/React-Warehouse/static/media/mybackground.426c3147.png",
+    "static/media/warehouse.9a5ad7bc.svg": "/React-Warehouse/static/media/warehouse.9a5ad7bc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38ed0b53.js",
+    "static/js/2.bda45c9c.chunk.js",
+    "static/css/main.24be126d.chunk.css",
+    "static/js/main.f2e56b38.chunk.js"
+  ]
+}
