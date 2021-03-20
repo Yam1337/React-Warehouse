@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+body {
+  background-color: #aa7939;
+  background-image: url(./images/mybackground.png);
+  background-size: 300px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+  background-color: #d5a668;
+  color: #533002;
+}
+.container {
+  margin-top: 1vh;
+  display: flex;
+  margin-top: 8vh;
+  height: 63vh;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wh {
+  margin-left: 10px;
+}
+.received {
+  background-color: #ffd7a3;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
+  height: 50vh;
+  width: 20vw;
+  min-width: 110px;
+  color: #1b1d58;
+}
+.queue {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.orders {
+  background-color: #7f5217;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.issued {
+  background-color: #ffd7a3;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 20vw;
+  color: #1b1d58;
+  min-width: 110px;
+}
+.bigger {
+  font-size: calc(12px + 1.5vw);
+  font-weight: bolder;
+}
+.myInput {
+  width: 100px;
+}
+.form {
+  justify-content: center;
+  text-align: center;
+  font-size: calc(12px + 1vw);
+}
+.centered {
+  background-color: #333577;
+  color: #7c7db3;
+  width: 150px;
+  margin: 5px;
+  border-radius: 20px;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.customer {
+  width: 15vw;
+  margin: 20px;
+  background-color: #7c7db3;
+  border-radius: 50%;
+  border: solid;
+  border-color: #333577;
+}
+.myButton {
+  font-size: calc(12px + 1vw);
+  background-color: #333577;
+  color: #babbe0;
+  width: 8vw;
+  min-width: 65px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.myButton:focus {
+  outline: none;
+}
+.myButton:active {
+  transform: scale(0.95);
+}
+.counterContainer {
+  display: flex;
+  justify-content: center;
+}
+.counter {
+  display: flex;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #7c7db3;
+  background-color: #333577;
+  border-radius: 0px 0px 35px 35px;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  font-size: calc(8px + 0.2vw);
+}
+.delButton {
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.delButton:focus {
+  outline: none;
+}
+.delButton:active {
+  transform: scale(0.95);
+}
+.approval {
+  display: flex;
+  align-content: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  font-family: monospace;
+  font-style: italic;
 }
