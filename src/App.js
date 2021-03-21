@@ -85,6 +85,7 @@ function App() {
           console.log(lastTransaction);
           setLastTransaction(lastTransaction);
           myAmount2 = 0;
+          setMyAmount2(myAmount2);
           return;
         } else if (Number(myAmount2) === Number(myWares[0].amount)) {
           lastTransaction =
@@ -95,6 +96,9 @@ function App() {
           setLastTransaction(lastTransaction);
           myWares = myWares.filter((x) => x !== myWares[0]);
           setMyWares(myWares);
+          myAmount2 = 0;
+          setMyAmount2(myAmount2);
+          return;
         } else if (Number(myAmount2) > Number(myWares[0].amount)) {
           myAmount2 = myAmount2 - Number(myWares[0].amount);
           additionalAmount = Number(
