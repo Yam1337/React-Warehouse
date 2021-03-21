@@ -69,28 +69,44 @@ function App() {
       setLastTransactionUnit(myAmount2);
       let yyy = myWares.length;
       let additionalAmount = 0;
+      let additionalAmount2 = 0;
       myAmount2 = Number(myAmount2);
       for (let i = 0; i < yyy; i++) {
-        if (myAmount2 === 0) {
-          setMyWares(myWares);
-          return;
-        }
+        // if (myAmount2 === 0) {
+        //   setMyWares(myWares);
+        //   return;
+        // }
         if (myAmount2 < Number(myWares[0].amount)) {
           myWares[0].amount = Number(myWares[0].amount) - myAmount2;
           lastTransaction =
-            (myAmount2 * (myWares[0].price * 10) + additionalAmount * 10) / 10;
+            (Number(myAmount2) * (myWares[0].price * 10) +
+              additionalAmount * 10) /
+            10;
+          console.log(lastTransaction);
           setLastTransaction(lastTransaction);
           myAmount2 = 0;
-        } else {
+          return;
+        } else if (Number(myAmount2) === Number(myWares[0].amount)) {
+          lastTransaction =
+            (Number(myAmount2) * (myWares[0].price * 10) +
+              additionalAmount * 10 +
+              additionalAmount2 * 10) /
+            10;
+          setLastTransaction(lastTransaction);
+          myWares = myWares.filter((x) => x !== myWares[0]);
+          setMyWares(myWares);
+        } else if (Number(myAmount2) > Number(myWares[0].amount)) {
           myAmount2 = myAmount2 - Number(myWares[0].amount);
           additionalAmount = Number(
             additionalAmount +
               (myWares[0].amount * (myWares[0].price * 10)) / 10
           );
+          setLastTransaction(lastTransaction);
+          console.log("usuń");
           myWares = myWares.filter((x) => x !== myWares[0]);
+          setMyWares(myWares);
         }
       }
-      setMyWares(myWares);
     } else {
       alert(
         "ERROR! Wrong amount! Make sure, that your amount is higher than 0, divisible by 10 and lower or equal to avaiable wares!"
